@@ -162,3 +162,18 @@ color:#444;
 padding:10px;
 border-top:2px solid #ddd;
 }
+.institute-title{
+  font-size:26px;
+  font-weight:700;
+  color:#003366;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.dmc{
+  display:block;
+  font-size:18px;
+  color:#c40000;
+  font-weight:600;
+  margin-top:4px;
+}

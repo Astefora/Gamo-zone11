@@ -21,9 +21,13 @@ export default function App() {
 
         {/* Official Statement */}
         <div className="statement-box">
-          <h1>Automated Landslide and Flood Event Analysis in Gamo Zone</h1>
 
-          <h2>Official Statement from the Ethiopian Space Science and Geospatial Institute</h2>
+          <h1>Landslide and Flood Event Analysis in Gamo Zone</h1>
+
+          <h2 className="institute-title">
+            Ethiopian Space Science and Geospatial Institute
+            <span className="dmc">(Disaster Monitoring Center - DMC)</span>
+          </h2>
 
           <p>
             The Ethiopian Space Science and Geospatial Institute (SSGI) expresses its deepest condolences over the loss of life caused by heavy rainfall, subsequent landslides, and flooding in various areas of the Gamo Zone, particularly in the highland districts of Bonke, Kamba Zuria, and Gacho Baba.
@@ -71,14 +75,14 @@ export default function App() {
             <img src="/images/t5.jpg" alt="Additional Data"/>
 
             <div className="text-box">
-              Additional  deformation monitoring map.
+              Additional deformation monitoring map.
             </div>
           </div>
 
         </div>
 
 
-        {/* ROW 2 (t4 BEFORE t3) */}
+        {/* ROW 2 */}
         <div className="row">
 
           <div className="panel">
@@ -101,6 +105,10 @@ export default function App() {
 
           <div className="panel">
             <img src="/images/t3.jpg" alt="Time Series"/>
+
+            {/* NEW IMAGE BELOW t3 */}
+            <img src="/images/t10.jpg" alt="Additional Monitoring"/>
+
             <h2>Time Series Data</h2>
 
             <div className="text-box">
@@ -111,13 +119,13 @@ export default function App() {
         </div>
 
 
-        {/* ONE SINGLE TEXT PLACEHOLDER AT BOTTOM */}
+        {/* ANALYSIS TEXT */}
         <div className="analysis-box">
 
           <h3>Landslide Analysis Summary</h3>
 
           <p>
-            The susceptibility analysis indicates that several areas within the Gamo Zone are highly vulnerable to landslides due to steep slopes, unstable geological conditions, and intense rainfall events. The InSAR displacement analysis confirms active ground deformation in multiple locations. When combined with precipitation data, the results suggest that prolonged rainfall significantly contributes to slope instability. These findings highlight the importance of integrating geospatial monitoring, early warning systems, and coordinated disaster risk management strategies to reduce potential impacts on communities and infrastructure.
+            Following the catastrophic flood and landslide event that affected the Gamo region on 10 March 2026, Interferometric Synthetic Aperture Radar (InSAR) time-series analysis was used to investigate pre-event ground deformation patterns that may have contributed to slope instability. The analysis utilized Sentinel-1 Single Look Complex (SLC) imagery acquired along descending orbit track 152, spanning January 2023 through the end of 2025, to capture ground motion prior to the event. Interferogram generation was performed using the Alaska Satellite Facility’s HyP3 on-demand processing service (https://search.asf.alaska.edu/), while the time-series inversion was conducted using the Miami InSAR Time-series software in Python (MintPy). The derived mean line-of-sight (LOS) velocity map reveals persistent subsidence across the affected area, with location P1 (Figure 1) showing a downward displacement rate of −1.16 cm yr⁻¹, represented by blue coloration in the velocity field. Conversely, areas displaying positive velocities (red coloration) indicate localized surface uplift, which may be associated with seasonal hydrological processes or differential soil compaction. These observations suggest that progressive ground subsidence during the pre-event period may have increased susceptibility to slope failure during the extreme precipitation event. In addition, previous landslide susceptibility assessments conducted by the Disaster Risk Management Commission (DRMC) indicated that the affected area falls within a very high landslide susceptibility zone. The combination of long-term ground deformation detected through InSAR and the high susceptibility classification identified in earlier studies highlights the inherent instability of the slope. However, further integration of hydrogeological, rainfall, and geotechnical data would be necessary to establish a definitive causal relationship between the observed deformation trends and the triggering mechanisms of the 10 March 2026 disaster.
           </p>
 
         </div>
@@ -125,7 +133,7 @@ export default function App() {
 
         {/* Footer */}
         <div className="footer">
-          Automated landslide monitoring using Geospatial and InSAR analysis
+          landslide and Flood assessment on recent monitoring using Geospatial and InSAR analysis
         </div>
 
       </div>
