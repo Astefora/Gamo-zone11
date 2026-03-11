@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+/* GENERAL PAGE STYLE */
+
+body{
+margin:0;
+font-family: "Segoe UI", "Roboto", sans-serif;
+background: linear-gradient(135deg,#f5f7fb,#eef2f7);
+color:#333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+background:#0b1f3a;
+color:white;
+padding:15px 30px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+height:60px;
+margin-right:20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-center h1{
+font-size:28px;
+font-weight:600;
+letter-spacing:1px;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* MAIN POSTER */
+
+.poster{
+width:92%;
+margin:auto;
+padding:30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* STATEMENT BOX */
+
+.statement-box{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+border-left:8px solid #1f4fa3;
+margin-bottom:35px;
+}
+
+.statement-box h1{
+font-size:30px;
+color:#0b3d91;
+margin-bottom:10px;
+}
+
+.statement-box h2{
+font-size:20px;
+color:#555;
+margin-bottom:15px;
+}
+
+.statement-box p{
+font-size:16px;
+line-height:1.7;
+margin-bottom:10px;
+}
+
+.statement-box ul{
+padding-left:20px;
+}
+
+.statement-box li{
+margin-bottom:6px;
+font-size:16px;
+}
+
+
+/* ROW LAYOUT */
+
+.row{
+display:flex;
+gap:25px;
+margin-bottom:30px;
+}
+
+
+/* IMAGE PANELS */
+
+.panel{
+flex:1;
+background:white;
+border-radius:12px;
+padding:15px;
+box-shadow:0 5px 18px rgba(0,0,0,0.08);
+transition:transform 0.3s ease;
+}
+
+.panel:hover{
+transform:translateY(-5px);
+}
+
+.panel img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.panel h2{
+font-size:18px;
+color:#1c3d7a;
+margin-bottom:8px;
+}
+
+
+/* TEXT PLACEHOLDER */
+
+.text-box{
+background:#f2f6ff;
+padding:12px;
+border-radius:8px;
+font-size:14px;
+line-height:1.5;
+border-left:4px solid #2b65d9;
+}
+
+
+/* ANALYSIS SUMMARY BOX */
+
+.analysis-box{
+background:linear-gradient(135deg,#f0f4ff,#e3ecff);
+padding:25px;
+border-radius:12px;
+border-left:8px solid #1f4fa3;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+margin-top:25px;
+}
+
+.analysis-box h3{
+font-size:22px;
+color:#0b3d91;
+margin-bottom:10px;
+}
+
+.analysis-box p{
+font-size:16px;
+line-height:1.7;
+}
+
+
+/* FOOTER */
+
+.footer{
+margin-top:30px;
+text-align:center;
+font-weight:600;
+font-size:16px;
+color:#444;
+padding:10px;
+border-top:2px solid #ddd;
 }
